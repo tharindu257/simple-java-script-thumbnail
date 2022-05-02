@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title>img thumb</title>
+   <style type ="text/css">
+
+       .tumbnail{
+           height: 100px;
+           width: 200px; }
+
+           #display{ display: block;
+            height: 300px;
+            width: 600px; }
+
+   </style>
+   <script type="text/javascript">
+       function f1 (x){var dis = document.getElementById("display");
+                        dis.src=x.src;
+                        x.style.border= "5px solid #f00";
+                        dis.style.display="block";}
+
+        function f2(x){x.style.border="";
+        dis.style.display="none";}
+   </script>
+</head>
+<body>
+    <img src ="anime.jpg" class="tumbnail" onmouseover="f1(this)" onmouseout="f2(this)"> 
+    <img src ="anime2.jpg" class="tumbnail"onmouseover="f1(this)"onmouseout="f2(this)" > 
+    <img src ="anime3.jpg" class="tumbnail"onmouseover="f1(this)"onmouseout="f2(this)"> 
+    <img id="display" src ="anime.jpg"> 
+</body>
+</html>s
